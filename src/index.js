@@ -7,7 +7,7 @@ export default function (config) {
   }
 
   return {
-    check: async (request, response) => {
+    check: (request, response) => {
       const authError = new Errors().unauthorized()
 
       const auth = request.headers.authorization
